@@ -5,9 +5,9 @@ hide:
   - toc
 ---
 
-# M690B Wiki
+# CAPTURE Wiki
 
-This Wiki contains the documentation for preparing, testing and conducting indoor/outdoor missions using the M690B drone. Additionally, the procedures used and the results obtained in the [**FIREPUMA**](https://welcome.isr.tecnico.ulisboa.pt/projects/forest-fire-prevention-through-uncertainty-minimization-in-surveillance/) and [**CAPTURE**](http://capture.isr.tecnico.ulisboa.pt/pt/) missions will also be documented.
+This Wiki contains the documentation for preparing, testing and conducting indoor/outdoor missions using the M690B adn Easglider4 drones. Additionally, the procedures used and the results obtained in the [**CAPTURE**](http://capture.isr.tecnico.ulisboa.pt/pt/) missions are also documented.
 
 <!-- Slideshow container -->
 <div class="slideshow-container">
