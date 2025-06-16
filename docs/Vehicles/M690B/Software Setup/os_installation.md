@@ -15,8 +15,8 @@ The installation of the operating system should be made using the [**NVIDIA SDK 
 
 The SDK Manager can then be used to flash the *JetPack 5.1.1 (rev. 1)* OS onto the board as shown in the following images. Before flashing there is an option to select which storage solution to use for the OS as well as the ability to configure a user so as not to require a physical connection to the board on first boot to finish the OS installation.
 
-![SDK Manager Setup](../assets/sdk_manager_1.png "SDK Manager Setup")
-![Target Components Selection](../assets/sdk_manager_2.png "Target Components Selection")
+![SDK Manager Setup](../../../assets/sdk_manager_1.png "SDK Manager Setup")
+![Target Components Selection](../../../assets/sdk_manager_2.png "Target Components Selection")
 
 ## 3. Initial Setup
 

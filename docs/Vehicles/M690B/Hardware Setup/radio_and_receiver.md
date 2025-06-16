@@ -21,7 +21,7 @@ The radio used is the [Taranis X9D Plus](https://www.frsky-rc.com/product/tarani
 | ARM         | SD      | CH8   | ARM SW      |
 
 
-![Taranis X9D Plus](../assets/taranis_x9dp.jpg "Taranis X9D Plus")
+![Taranis X9D Plus](../../../assets/taranis_x9dp.jpg "Taranis X9D Plus")
 
 ## Receiver
 

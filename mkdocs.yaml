@@ -1,10 +1,10 @@
-site_name: M690B Wiki
+site_name: CAPTURE Wiki
 site_url: https://hardtekpt.github.io/M690B-Wiki/
 repo_url: https://github.com/hardtekpt/M690B-Wiki
-repo_name: M690B-Wiki
+repo_name: CAPTURE-Wiki
 #edit_uri: edit/main/docs/
-site_author: Francisco Santos
-theme: 
+site_author: Francisco Santos, Filipe Cavalheiro
+theme:
   name: material
   palette:
   - media: '(prefers-color-scheme: light)'
@@ -19,7 +19,7 @@ theme:
     toggle:
       icon: material/weather-sunny
       name: Switch to light mode
-  
+
   icon:
     logo: material/quadcopter
     repo: fontawesome/brands/git-alt
@@ -59,7 +59,6 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-  
 
 plugins:
   - monorepo
@@ -89,29 +88,33 @@ extra_css:
   - stylesheets/extra.css
 extra_javascript:
   - stylesheets/js.js
-  
+
 nav:
   - Introduction: 'index.md'
-  - Vehicle Setup:
-    - 'Vehicle Setup/index.md'
-    - Hardware Setup: 
-      - 'Hardware Setup/index.md'
-      - Onboard Computer: 'Hardware Setup/onboard_computer.md'
-      - Flight Computer: 'Hardware Setup/flight_computer.md'
-      - Radio and Receiver: 'Hardware Setup/radio_and_receiver.md'
-    #- Software Setup:
-    #  - 'Software Setup/index.md'
-    #  - OS and ROS installation: 'Software Setup/os_installation.md'
-    #  - VRPN and MAVROS setup: 'Software Setup/vrpn_and_mavros.md'
-    - Software Setup:
-      - 'Software Setup/index.md'
-      - OS installation and Setup: 'Software Setup/os_installation.md'
-      - ROS and MAVROS installation: 'Software Setup/ros_installation.md'
-      - PX4 Configuration Checklist: 'Software Setup/px4_configuration_checklist.md'
-      - Drone Control Stack Setup: 'Software Setup/drone_control_stack.md'
-      - Usefull Packages: 'Software Setup/usefull_packages.md'
-      - Drone Console: 'Software Setup/drone_console.md'
-      - Workspace Syncronization: 'Software Setup/ws_sync.md'
+  - Vehicles:
+    - 'Vehicles/index.md'
+    - EasyGlider4: 
+      - 'Vehicles/EasyGlider4/index.md'
+      - Hardware Setup:
+        - 'Vehicles/EasyGlider4/Hardware Setup/hardware.md'
+      - Software Setup:
+        - 'Vehicles/EasyGlider4/Software Setup/software.md'
+    - M690B: 
+      - 'Vehicles/M690B/index.md'
+      - Hardware Setup:
+        - 'Vehicles/M690B/Hardware Setup/index.md'
+        - Onboard Computer: 'Vehicles/M690B/Hardware Setup/onboard_computer.md'
+        - Flight Computer: 'Vehicles/M690B/Hardware Setup/flight_computer.md'
+        - Radio and Receiver: 'Vehicles/M690B/Hardware Setup/radio_and_receiver.md'
+      - Software Setup:
+        - 'Vehicles/M690B/Software Setup/index.md'
+        - OS installation and Setup: 'Vehicles/M690B/Software Setup/os_installation.md'
+        - ROS and MAVROS installation: 'Vehicles/M690B/Software Setup/ros_installation.md'
+        - PX4 Configuration Checklist: 'Vehicles/M690B/Software Setup/px4_configuration_checklist.md'
+        - Drone Control Stack Setup: 'Vehicles/M690B/Software Setup/drone_control_stack.md'
+        - Usefull Packages: 'Vehicles/M690B/Software Setup/usefull_packages.md'
+        - Drone Console: 'Vehicles/M690B/Software Setup/drone_console.md'
+        - Workspace Syncronization: 'Vehicles/M690B/Software Setup/ws_sync.md'
   - Known Issues: 'known_issues.md'
   - Mission Logs:
     - 'Mission Logs/index.md'
@@ -126,6 +129,6 @@ nav:
     - 17-11-2023: 'Mission Logs/17-11-2023.md'
     - 06-12-2023: 'Mission Logs/17-11-2023.md'
   - Roadmap: 'roadmap.md'
-  - Reference: 
+  - Reference:
     - Equipment Details: 'Reference/equipment_details.md'
     - Generating the Documentation: 'Reference/generating_docs.md'

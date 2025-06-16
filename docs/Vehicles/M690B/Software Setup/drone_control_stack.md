@@ -256,4 +256,4 @@ After installing the code stack the provided *lissajous* example package can be 
     roslaunch drone_launch simulator_bringup.launch
     ```
 
-    ![Lissajous Gazebo Simulation](../assets/simulation_lissajous.gif "Lissajous Gazebo Simulation")
+    ![Lissajous Gazebo Simulation](../../../assets/simulation_lissajous.gif "Lissajous Gazebo Simulation")
