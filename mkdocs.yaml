@@ -96,9 +96,9 @@ nav:
     - EasyGlider4: 
       - 'Vehicles/EasyGlider4/index.md'
       - Hardware Setup:
-        - 'Vehicles/EasyGlider4/Hardware Setup/hardware.md'
+        - 'Vehicles/EasyGlider4/Hardware Setup/index.md'
       - Software Setup:
-        - 'Vehicles/EasyGlider4/Software Setup/software.md'
+        - 'Vehicles/EasyGlider4/Software Setup/index.md'
     - M690B: 
       - 'Vehicles/M690B/index.md'
       - Hardware Setup:
