@@ -3,7 +3,7 @@ hide:
   - footer
 ---
 
-# Vehicle Setup
+# EasyGlider 4 - Vehicle Setup
 
 This section documents in detail the entire vehicle setup, including all the hardware components that make up the vehicle as well as the entire software package that allows it to function. In this way, the section is divided into two main subsections:
 

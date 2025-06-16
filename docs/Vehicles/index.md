@@ -3,7 +3,7 @@ hide:
   - footer
 ---
 
-# Existing Vehicle
+#  Vehicles
 
 This section documents in detail what vehicles exist in the project CAPTURE
 
