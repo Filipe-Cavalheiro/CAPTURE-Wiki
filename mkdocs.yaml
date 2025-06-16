@@ -95,6 +95,8 @@ nav:
     - 'Vehicles/index.md'
     - EasyGlider4: 
       - 'Vehicles/EasyGlider4/index.md'
+      - CAD Model:
+        - 'Vehicles/EasyGlider4/CAD Model/index.md'
       - Hardware Setup:
         - 'Vehicles/EasyGlider4/Hardware Setup/index.md'
       - Software Setup:
@@ -127,7 +129,7 @@ nav:
     - 29-09-2023: 'Mission Logs/29-09-2023.md'
     - 13-10-2023: 'Mission Logs/13-10-2023.md'
     - 17-11-2023: 'Mission Logs/17-11-2023.md'
-    - 06-12-2023: 'Mission Logs/17-11-2023.md'
+    - 06-12-2023: 'Mission Logs/06-12-2023.md'
   - Roadmap: 'roadmap.md'
   - Reference:
     - Equipment Details: 'Reference/equipment_details.md'
