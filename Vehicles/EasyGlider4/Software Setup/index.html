@@ -10,28 +10,28 @@
         <meta name="author" content="Francisco Santos, Filipe Cavalheiro">
       
       
-        <link rel="canonical" href="https://filipe-cavalheiro.github.io/CAPTURE-Wiki/Vehicles/EasyGlider4/Hardware%20Setup/hardware/">
+        <link rel="canonical" href="https://filipe-cavalheiro.github.io/CAPTURE-Wiki/Vehicles/EasyGlider4/Software%20Setup/">
       
       
-        <link rel="prev" href="../../">
+        <link rel="prev" href="../Hardware%20Setup/">
       
       
-        <link rel="next" href="../../Software%20Setup/software/">
+        <link rel="next" href="../../M690B/">
       
       
-      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>Hardware - CAPTURE Wiki</title>
+        <title>Index - CAPTURE Wiki</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,9 +50,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#hardware-components" class="md-skip">
+        <a href="#software-stack" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../.." title="CAPTURE Wiki" class="md-header__button md-logo" aria-label="CAPTURE Wiki" data-md-component="logo">
+    <a href="../../.." title="CAPTURE Wiki" class="md-header__button md-logo" aria-label="CAPTURE Wiki" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.5 1C8 1 10 3 10 5.5c0 .88-.25 1.7-.69 2.4l.1.1h5.18l.1-.1c-.44-.7-.69-1.52-.69-2.4C14 3 16 1 18.5 1S23 3 23 5.5 21 10 18.5 10c-.88 0-1.7-.25-2.4-.69l-1.1 1.1v3.18l1.1 1.1c.7-.44 1.52-.69 2.4-.69 2.5 0 4.5 2 4.5 4.5S21 23 18.5 23 14 21 14 18.5c0-.88.25-1.7.69-2.4l-.1-.1H9.41l-.1.1c.44.7.69 1.52.69 2.4C10 21 8 23 5.5 23S1 21 1 18.5 3 14 5.5 14c.88 0 1.7.25 2.4.69l1.1-1.1v-3.18l-1.1-1.1c-.7.44-1.52.69-2.4.69C3 10 1 8 1 5.5S3 1 5.5 1m0 2A2.5 2.5 0 0 0 3 5.5 2.5 2.5 0 0 0 5.5 8 2.5 2.5 0 0 0 8 5.5 2.5 2.5 0 0 0 5.5 3m0 13A2.5 2.5 0 0 0 3 18.5 2.5 2.5 0 0 0 5.5 21 2.5 2.5 0 0 0 8 18.5 2.5 2.5 0 0 0 5.5 16m13-13A2.5 2.5 0 0 0 16 5.5 2.5 2.5 0 0 0 18.5 8 2.5 2.5 0 0 0 21 5.5 2.5 2.5 0 0 0 18.5 3m0 13a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5M3.91 17.25l1.13.66c.13-.1.29-.16.46-.16a.75.75 0 0 1 .75.75l-.01.1 1.13.65-.28.5-1.13-.66c-.13.1-.29.16-.46.16a.75.75 0 0 1-.75-.75l.01-.1-1.13-.65zm-.28-11 1.13-.65-.01-.1a.75.75 0 0 1 .75-.75c.17 0 .33.06.46.16l1.13-.66.28.5-1.13.65.01.1a.75.75 0 0 1-.75.75c-.17 0-.33-.06-.46-.16l-1.13.66zm13.28-2 1.13.66c.13-.1.29-.16.46-.16a.75.75 0 0 1 .75.75l-.01.1 1.13.65-.28.5-1.13-.66c-.13.1-.29.16-.46.16a.75.75 0 0 1-.75-.75l.01-.1-1.13-.65zm-.28 15 1.12-.75a.75.75 0 0 1 .75-.75c.17 0 .33.06.46.16l1.13-.66.28.5-1.12.75a.75.75 0 0 1-.75.75c-.17 0-.33-.06-.46-.16l-1.13.66z"/></svg>
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Hardware
+              Index
             
           </span>
         </div>
@@ -234,7 +234,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
   
@@ -257,7 +257,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../../" class="md-tabs__link">
+        <a href="../../" class="md-tabs__link">
           
   
   
@@ -277,7 +277,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../../known_issues/" class="md-tabs__link">
+      <a href="../../../known_issues/" class="md-tabs__link">
         
   
   
@@ -298,7 +298,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../Mission%20Logs/" class="md-tabs__link">
+        <a href="../../../Mission%20Logs/" class="md-tabs__link">
           
   
   
@@ -318,7 +318,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../../roadmap/" class="md-tabs__link">
+      <a href="../../../roadmap/" class="md-tabs__link">
         
   
   
@@ -339,7 +339,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../Reference/equipment_details/" class="md-tabs__link">
+        <a href="../../../Reference/equipment_details/" class="md-tabs__link">
           
   
   
@@ -377,7 +377,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="CAPTURE Wiki" class="md-nav__button md-logo" aria-label="CAPTURE Wiki" data-md-component="logo">
+    <a href="../../.." title="CAPTURE Wiki" class="md-nav__button md-logo" aria-label="CAPTURE Wiki" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.5 1C8 1 10 3 10 5.5c0 .88-.25 1.7-.69 2.4l.1.1h5.18l.1-.1c-.44-.7-.69-1.52-.69-2.4C14 3 16 1 18.5 1S23 3 23 5.5 21 10 18.5 10c-.88 0-1.7-.25-2.4-.69l-1.1 1.1v3.18l1.1 1.1c.7-.44 1.52-.69 2.4-.69 2.5 0 4.5 2 4.5 4.5S21 23 18.5 23 14 21 14 18.5c0-.88.25-1.7.69-2.4l-.1-.1H9.41l-.1.1c.44.7.69 1.52.69 2.4C10 21 8 23 5.5 23S1 21 1 18.5 3 14 5.5 14c.88 0 1.7.25 2.4.69l1.1-1.1v-3.18l-1.1-1.1c-.7.44-1.52.69-2.4.69C3 10 1 8 1 5.5S3 1 5.5 1m0 2A2.5 2.5 0 0 0 3 5.5 2.5 2.5 0 0 0 5.5 8 2.5 2.5 0 0 0 8 5.5 2.5 2.5 0 0 0 5.5 3m0 13A2.5 2.5 0 0 0 3 18.5 2.5 2.5 0 0 0 5.5 21 2.5 2.5 0 0 0 8 18.5 2.5 2.5 0 0 0 5.5 16m13-13A2.5 2.5 0 0 0 16 5.5 2.5 2.5 0 0 0 18.5 8 2.5 2.5 0 0 0 21 5.5 2.5 2.5 0 0 0 18.5 3m0 13a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5M3.91 17.25l1.13.66c.13-.1.29-.16.46-.16a.75.75 0 0 1 .75.75l-.01.1 1.13.65-.28.5-1.13-.66c-.13.1-.29.16-.46.16a.75.75 0 0 1-.75-.75l.01-.1-1.13-.65zm-.28-11 1.13-.65-.01-.1a.75.75 0 0 1 .75-.75c.17 0 .33.06.46.16l1.13-.66.28.5-1.13.65.01.1a.75.75 0 0 1-.75.75c-.17 0-.33-.06-.46-.16l-1.13.66zm13.28-2 1.13.66c.13-.1.29-.16.46-.16a.75.75 0 0 1 .75.75l-.01.1 1.13.65-.28.5-1.13-.66c-.13.1-.29.16-.46.16a.75.75 0 0 1-.75-.75l.01-.1-1.13-.65zm-.28 15 1.12-.75a.75.75 0 0 1 .75-.75c.17 0 .33.06.46.16l1.13-.66.28.5-1.12.75a.75.75 0 0 1-.75.75c-.17 0-.33-.06-.46-.16l-1.13.66z"/></svg>
@@ -407,7 +407,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -461,7 +461,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../" class="md-nav__link ">
+            <a href="../../" class="md-nav__link ">
               
   
   
@@ -528,7 +528,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -560,138 +560,13 @@
                 
   
   
-    
   
   
-  
     
     
       
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2_2_2" id="__nav_2_2_2_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Hardware Setup
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_2_2">
-            <span class="md-nav__icon md-icon"></span>
-            Hardware Setup
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Hardware
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    Hardware
-    
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#hardware-components" class="md-nav__link">
-    <span class="md-ellipsis">
-      Hardware Components
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
         
       
     
@@ -707,11 +582,75 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" >
         
           
-          <label class="md-nav__link" for="__nav_2_2_3" id="__nav_2_2_3_label" tabindex="0">
+          <div class="md-nav__link md-nav__container">
+            <a href="../Hardware%20Setup/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Hardware Setup
+    
+  </span>
+  
+
+            </a>
             
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Hardware Setup
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="./" class="md-nav__link md-nav__link--active">
+              
   
   
   <span class="md-ellipsis">
@@ -720,37 +659,17 @@
   </span>
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
+            </a>
+            
+          </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2_3">
             <span class="md-nav__icon md-icon"></span>
             Software Setup
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../Software%20Setup/software/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Software
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
               
             
           </ul>
@@ -806,7 +725,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../M690B/" class="md-nav__link ">
+            <a href="../../M690B/" class="md-nav__link ">
               
   
   
@@ -870,7 +789,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../M690B/Hardware%20Setup/" class="md-nav__link ">
+            <a href="../../M690B/Hardware%20Setup/" class="md-nav__link ">
               
   
   
@@ -905,7 +824,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../M690B/Hardware%20Setup/onboard_computer/" class="md-nav__link">
+      <a href="../../M690B/Hardware%20Setup/onboard_computer/" class="md-nav__link">
         
   
   
@@ -928,7 +847,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../M690B/Hardware%20Setup/flight_computer/" class="md-nav__link">
+      <a href="../../M690B/Hardware%20Setup/flight_computer/" class="md-nav__link">
         
   
   
@@ -951,7 +870,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../M690B/Hardware%20Setup/radio_and_receiver/" class="md-nav__link">
+      <a href="../../M690B/Hardware%20Setup/radio_and_receiver/" class="md-nav__link">
         
   
   
@@ -1019,7 +938,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../M690B/Software%20Setup/" class="md-nav__link ">
+            <a href="../../M690B/Software%20Setup/" class="md-nav__link ">
               
   
   
@@ -1054,7 +973,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../M690B/Software%20Setup/os_installation/" class="md-nav__link">
+      <a href="../../M690B/Software%20Setup/os_installation/" class="md-nav__link">
         
   
   
@@ -1077,7 +996,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../M690B/Software%20Setup/ros_installation/" class="md-nav__link">
+      <a href="../../M690B/Software%20Setup/ros_installation/" class="md-nav__link">
         
   
   
@@ -1100,7 +1019,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../M690B/Software%20Setup/px4_configuration_checklist/" class="md-nav__link">
+      <a href="../../M690B/Software%20Setup/px4_configuration_checklist/" class="md-nav__link">
         
   
   
@@ -1123,7 +1042,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../M690B/Software%20Setup/drone_control_stack/" class="md-nav__link">
+      <a href="../../M690B/Software%20Setup/drone_control_stack/" class="md-nav__link">
         
   
   
@@ -1146,7 +1065,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../M690B/Software%20Setup/usefull_packages/" class="md-nav__link">
+      <a href="../../M690B/Software%20Setup/usefull_packages/" class="md-nav__link">
         
   
   
@@ -1169,7 +1088,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../M690B/Software%20Setup/drone_console/" class="md-nav__link">
+      <a href="../../M690B/Software%20Setup/drone_console/" class="md-nav__link">
         
   
   
@@ -1192,7 +1111,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../M690B/Software%20Setup/ws_sync/" class="md-nav__link">
+      <a href="../../M690B/Software%20Setup/ws_sync/" class="md-nav__link">
         
   
   
@@ -1238,7 +1157,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../known_issues/" class="md-nav__link">
+      <a href="../../../known_issues/" class="md-nav__link">
         
   
   
@@ -1303,7 +1222,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../../Mission%20Logs/" class="md-nav__link ">
+            <a href="../../../Mission%20Logs/" class="md-nav__link ">
               
   
   
@@ -1338,7 +1257,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Mission%20Logs/05-07-2023/" class="md-nav__link">
+      <a href="../../../Mission%20Logs/05-07-2023/" class="md-nav__link">
         
   
   
@@ -1361,7 +1280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Mission%20Logs/13-07-2023/" class="md-nav__link">
+      <a href="../../../Mission%20Logs/13-07-2023/" class="md-nav__link">
         
   
   
@@ -1384,7 +1303,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Mission%20Logs/20-07-2023/" class="md-nav__link">
+      <a href="../../../Mission%20Logs/20-07-2023/" class="md-nav__link">
         
   
   
@@ -1407,7 +1326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Mission%20Logs/27-07-2023/" class="md-nav__link">
+      <a href="../../../Mission%20Logs/27-07-2023/" class="md-nav__link">
         
   
   
@@ -1430,7 +1349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Mission%20Logs/28-07-2023/" class="md-nav__link">
+      <a href="../../../Mission%20Logs/28-07-2023/" class="md-nav__link">
         
   
   
@@ -1453,7 +1372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Mission%20Logs/22-09-2023/" class="md-nav__link">
+      <a href="../../../Mission%20Logs/22-09-2023/" class="md-nav__link">
         
   
   
@@ -1476,7 +1395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Mission%20Logs/29-09-2023/" class="md-nav__link">
+      <a href="../../../Mission%20Logs/29-09-2023/" class="md-nav__link">
         
   
   
@@ -1499,7 +1418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Mission%20Logs/13-10-2023/" class="md-nav__link">
+      <a href="../../../Mission%20Logs/13-10-2023/" class="md-nav__link">
         
   
   
@@ -1522,7 +1441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Mission%20Logs/17-11-2023/" class="md-nav__link">
+      <a href="../../../Mission%20Logs/17-11-2023/" class="md-nav__link">
         
   
   
@@ -1545,7 +1464,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Mission%20Logs/17-11-2023/" class="md-nav__link">
+      <a href="../../../Mission%20Logs/17-11-2023/" class="md-nav__link">
         
   
   
@@ -1575,7 +1494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../roadmap/" class="md-nav__link">
+      <a href="../../../roadmap/" class="md-nav__link">
         
   
   
@@ -1646,7 +1565,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Reference/equipment_details/" class="md-nav__link">
+      <a href="../../../Reference/equipment_details/" class="md-nav__link">
         
   
   
@@ -1669,7 +1588,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Reference/generating_docs/" class="md-nav__link">
+      <a href="../../../Reference/generating_docs/" class="md-nav__link">
         
   
   
@@ -1711,31 +1630,20 @@
   
 
 
-  <h1>Hardware</h1>
+  <h1>Index</h1>
 
-<h2 id="hardware-components">Hardware Components</h2>
-<p>The fixed-wing drone selected for this study is the <strong>EasyGlider 4</strong>, chosen for its stability and suitability for autonomous flight.<br />
-The following hardware components were integrated into the system:</p>
-<p><img alt="Electrical diagram of connections and communication" src="../../../../assets/EasyGlider4/eletrical_diagram.png" title="Electrical diagram of connections and communication" /></p>
-<p><em>Figure: Electrical diagram of connections and communication</em></p>
+<h2 id="software-stack">Software Stack</h2>
+<p>The software stack, as detailed above, was used to implement and validate the simulation and autonomous flight. It includes:</p>
 <ul>
-<li><strong>Main Flight Controller:</strong> Holybro Pixhawk 6C Mini  </li>
-<li><strong>Companion Computer:</strong> Raspberry Pi Zero 2W  </li>
-<li><strong>Global Positioning System (GPS):</strong> u-blox NEO-M8N  </li>
-<li><strong>Wireless Communication via MAVLink:</strong> SiK Telemetry Radio V3  </li>
-<li><strong>Wireless Communication via WiFi:</strong> External Raspberry Pi Antenna  </li>
-<li><strong>Radio Control (RC) System:</strong></li>
-<li><strong>RC Receiver:</strong> FrSky X8B  </li>
-<li><strong>RC Transmitter:</strong> FrSky Taranis X9D  </li>
-<li><strong>Battery:</strong> Soaring 2200mAh 11.1V 3S1P 30C  </li>
-<li><strong>Airspeed Sensor:</strong> Mateksys ASPD-4525  </li>
-<li><strong>Electronic Speed Controller (ESC):</strong> ROXXY BL-Control 720 S-BEC  </li>
-<li><strong>Servos:</strong> Four Hitec HS-81 servos, one per control surface  </li>
+<li><strong>PX4 Autopilot:</strong> Open-source flight control software for Unmanned Vehicles </li>
+<li><strong>Gazebo:</strong> 3D simulation environment for realistic physics modeling </li>
+<li><strong>MAVSDK:</strong> API for communicating with PX4 and executing autonomous commands </li>
+<li><strong>QGroundControl (QGC):</strong> Used to configure flight parameters and visualize the flight  </li>
 </ul>
-<p>These components were selected to ensure reliable flight control, communication, and sensor data acquisition for autonomous navigation.<br />
-Their connections and communication layout are shown in the figure above.<br />
-The Raspberry Pi was modified to include an external WiFi antenna, located on the right wing, to increase the range and bitrate of communication.<br />
-This modification required micro soldering of an IPEX IPX UFL connector to the Raspberry Pi.</p>
+<p>The PX4 firmware was configured to support fixed-wing flight dynamics.<br />
+Gazebo was customized to include accurate aerodynamic properties.<br />
+MAVSDK enabled communication via MAVLink messages between the Raspberry Pi Zero 2W and the PX4 flight controller (Holybro),<br />
+allowing waypoint-based autonomous navigation. QGC was used for real-time monitoring and PX4 parameter modifications.</p>
 
 
 
@@ -1771,7 +1679,7 @@ This modification required micro soldering of an IPEX IPX UFL connector to the R
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Vehicle Setup">
+          <a href="../Hardware%20Setup/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Index">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1781,20 +1689,20 @@ This modification required micro soldering of an IPEX IPX UFL connector to the R
                 Previous
               </span>
               <div class="md-ellipsis">
-                Vehicle Setup
+                Index
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../Software%20Setup/software/" class="md-footer__link md-footer__link--next" aria-label="Next: Software">
+          <a href="../../M690B/" class="md-footer__link md-footer__link--next" aria-label="Next: Vehicle Setup">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Software
+                Vehicle Setup
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1825,12 +1733,12 @@ This modification required micro soldering of an IPEX IPX UFL connector to the R
     
     
       
-      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "toc.follow", "navigation.top", "search.suggest", "search.highlight", "search.share", "navigation.footer", "toc.integrate", "navigation.indexes", "navigation.tabs"], "search": "../../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "toc.follow", "navigation.top", "search.suggest", "search.highlight", "search.share", "navigation.footer", "toc.integrate", "navigation.indexes", "navigation.tabs"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
-        <script src="../../../../stylesheets/js.js"></script>
+        <script src="../../../stylesheets/js.js"></script>
       
     
   </body>
